@@ -1,0 +1,15 @@
+/* hello.c - my first C program
+   created by Daisy, 02/08/2018 */                          /* comment */
+   
+#include <studio.h>                                         /* preprocessor macros
+                                                               insert #include <header file>
+                                                               and variable declarations Define main() function */
+int n=3; float pi=3.14;                                     /* declare variables if any */
+int main (void)                                             /∗ function prototype ∗ /
+{
+    const char msg[] = "hello, knowing-nothing Daisy" ;     /* declare variables, only valid in this block */
+    puts (msg);                                             /* program statements 
+                                                               write message to console */
+    putchar(msg[]);
+    return 0;                                               /∗ exit (0 => success) ∗/
+}
