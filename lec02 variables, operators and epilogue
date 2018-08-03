@@ -1,0 +1,41 @@
+/* basic concepts */
+
+
+#include <stdio.h>
+
+/* character and numeric */
+int var(void)                     /* in VS, main() has been used in lec01, so the name of function was changed; 
+                                     otherwise, always use main() for online compiler testing.  */
+{
+    const char a = '\x41';        /* character A */
+    putchar(a);
+    printf("\n");                 /* line break */
+    int b = 0x41;                 /* hexadecimal numeric 41 */
+    printf("%x\n",b);             /* print out in hexadeciaml format, the result is 41 */
+    printf("%d\n",b);             /* print out in decimal format, the result is 65 */
+    return 0;                     /* a is a character, b is a numeric */
+}
+
+
+/* syntactic sugar */
+int synsug(void)
+{
+	int sign;
+	int x = 0;
+	sign = x>0 ? 1 : -1;            /* if (x>0) sign =1; else sign = -1 */
+	printf("%d\n", sign);
+	return 0;
+}
+
+
+/* conversion on 'char' to 'int' */
+int conupp(void)
+{
+	int isupper;
+	char c = 'a';
+	isupper = (c>='A' && c<='Z') ? 1 : 0;         /* if (c is an upper letter) isupper =1; else isupper = 0 */ 
+	printf("%d\n", isupper);
+	if (!isupper)
+		c = c - 'a' + 'A';
+	return 0;
+}
